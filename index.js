@@ -5,15 +5,18 @@ const pinkBlock = document.querySelector('.block--pink');
 const grayBlock = document.querySelector('.block--gray');
 const parent = document.querySelector('.blocks');
 
+var counter = -1;
+
 const rockets = (e) => {
-    e.target.style.background = 'blue';
+    counter--;
+    e.target.style.order = counter;
     
 }
 
-parent.addEventListener('click', rockets);
+//parent.addEventListener('click', rockets);
 
-//redBlock.addEventListener('click', rockets);
-//blueBlock.addEventListener('click', rockets);
-//greenBlock.addEventListener('click', rockets);
-//pinkBlock.addEventListener('click', rockets);
-//grayBlock.addEventListener('click', rockets);
+redBlock.addEventListener('click', rockets);
+blueBlock.addEventListener('click', rockets);
+greenBlock.addEventListener('click', rockets);
+pinkBlock.addEventListener('click', rockets);
+grayBlock.addEventListener('click', rockets);
