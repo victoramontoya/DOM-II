@@ -15,15 +15,16 @@ const rockets = e => {
 const travelers = e => {
   console.log('yo')
   //e.stopPropagation()
-  e.target.style.left = '100%';
-  e.target.style.transition = 'left 0.5s';
-  e.target.style.position = 'relative';
+  e.target.style.marginLeft = '120px';
+  e.target.style.transition = 'margin-left 0.5s';
+//  e.target.style.position = 'relative';
+
 }
 
 const travelersUp = e => {
   console.log('mouse up')
-  e.target.style.transition = 'left 0.5s';
-  e.target.style.left = '0%';
+  e.target.style.transition = 'margin-left 0.5s';
+  e.target.style.marginLeft = '10px';
 }
 
 //parent.addEventListener('mouseup', travelersUp);
